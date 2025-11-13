@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif; background: #f5f7fa; padding: 40px 20px; }
+        .container { max-width: 900px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); overflow: hidden; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px; }
+        .header h1 { font-size: 32px; margin-bottom: 4px; font-weight: 700; }
+        .content { padding: 40px; }
+        .client { margin-bottom: 40px; padding-bottom: 40px; border-bottom: 1px solid #e9ecef; }
+        .client p { font-size: 16px; color: #2d3748; margin: 4px 0; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 30px; }
+        thead { background: #f8f9fa; border-bottom: 2px solid #667eea; }
+        th { padding: 14px; text-align: left; font-size: 12px; font-weight: 600; color: #667eea; text-transform: uppercase; letter-spacing: 0.5px; }
+        td { padding: 14px; border-bottom: 1px solid #e9ecef; font-size: 15px; color: #2d3748; }
+        tbody tr:hover { background: #f8f9fa; }
+        tbody tr:last-child td { border-bottom: none; }
+        .total-section { display: flex; justify-content: flex-end; margin-top: 20px; }
+        .total-box { text-align: right; padding: 20px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #667eea; }
+        .total-label { font-size: 12px; color: #6c757d; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; margin-bottom: 8px; display: block; }
+        .total-value { font-size: 28px; font-weight: 700; color: #667eea; }
+        .footer { background: #f8f9fa; padding: 20px 40px; border-top: 1px solid #e9ecef; font-size: 13px; color: #6c757d; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Invoice</h1>
+        </div>
+        <div class="content">
+            <div class="client"><p><strong>Client: PAlonchi</strong></p></div>
+            <table border='0'>
+                <thead>
+                    <tr><th>Item Name</th><th style="text-align: right;">Price ($)</th></tr>
+                </thead>
+                <tbody><tr><td>Spoon</td><td style='text-align: right;'>$3.59</td></tr><tr><td>Car</td><td style='text-align: right;'>$9000.00</td></tr><tr><td>Computer</td><td style='text-align: right;'>$1000.00</td></tr></tbody>
+            </table>
+            <div class="total-section">
+                <div class="total-box">
+                    <span class="total-label">Total</span>
+                    <span class="total-value">$10003.59</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer">Generated on: 2025-11-13 22:35:04.464780</div>
+    </div>
+</body>
+</html>
